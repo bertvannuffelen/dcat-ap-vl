@@ -17,8 +17,8 @@ harvesting genereerde RDF
 
 TODO
 
-[] afwerken volledig voorbeeld
-[] context externaliseren
-[] commandline pipeline optimaliseren en verbeteren
-[] harvesting testen van gegeneeerde RDF in VODAP.
+- [ ] afwerken volledig voorbeeld
+- [ ] context externaliseren
+- [ ] commandline pipeline optimaliseren en verbeteren
+- [ ] harvesting testen van gegeneeerde RDF in VODAP.
 
