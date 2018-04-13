@@ -1,0 +1,225 @@
+{
+    "@context": [
+        {
+            "license": {
+                "@id": "http://purl.org/dc/terms/license",
+                "@type": "@id"
+            },
+            "accessURL": "http://www.w3.org/ns/dcat#accessURL",
+            "byteSize": "http://www.w3.org/ns/dcat#byteSize",
+            "bytes": "http://www.w3.org/ns/dcat#bytes",
+            "downloadURL": "http://www.w3.org/ns/dcat#downloadURL",
+            "mediaType": {
+                "@id": "http://www.w3.org/ns/dcat#mediaType",
+                "@type": "@id"
+            },
+            "size": "http://www.w3.org/ns/dcat#size"
+        },
+        {
+	    "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "/dc/terms/accessRights": {
+                "@id": "http://purl.org/dc/terms/accessRights",
+                "@type": "@id"
+            },
+            "frequency": "http://purl.org/dc/terms/acrualPeriodicity",
+            "/dc/terms/conformsTo": {
+                "@id": "http://purl.org/dc/terms/conformsTo",
+                "@type": "@id"
+            },
+            "description": "http://purl.org/dc/terms/description",
+            "/dc/terms/hasVersion": "http://purl.org/dc/terms/hasVersion",
+            "/dc/terms/identifier": "http://purl.org/dc/terms/identifier",
+            "/dc/terms/isVersionOf": "http://purl.org/dc/terms/isVersionOf",
+            "issued": {
+		"@id" : "http://purl.org/dc/terms/issued",
+		"@type" : "xsd:DateTime"
+		},
+            "/dc/terms/language": {
+                "@id": "http://purl.org/dc/terms/language",
+                "@type": "@id"
+            },
+            "modified": {
+		"@id" : "http://purl.org/dc/terms/modified",
+		"@type" : "xsd:DateTime"
+		},
+            "/dc/terms/provenance": {
+                "@id": "http://purl.org/dc/terms/provenance",
+                "@type": "@id"
+            },
+            "publisher": {
+                "@id": "http://purl.org/dc/terms/publisher",
+                "@type": "@id"
+            },
+            "/dc/terms/relation": "http://purl.org/dc/terms/relation",
+            "/dc/terms/source": "http://purl.org/dc/terms/source",
+            "/dc/terms/spatial": {
+                "@id": "http://purl.org/dc/terms/spatial",
+                "@type": "@id"
+            },
+            "temporalCoverage": {
+                "@id": "http://purl.org/dc/terms/temporal",
+                "@type": "@id"
+            },
+	    "schema" : "https://schema.org/",
+            "title": "http://purl.org/dc/terms/title",
+            "/dc/terms/type": {
+                "@id": "http://purl.org/dc/terms/type",
+                "@type": "@id"
+            },
+            "contactPoint": {
+                "@id": "http://www.w3.org/ns/dcat#contactPoint",
+                "@type": "@id"
+            },
+            "dataDictionary": "http://www.w3.org/ns/dcat#dataDictionary",
+            "dataQuality": "http://www.w3.org/ns/dcat#dataQuality",
+            "distribution": {
+                "@id": "http://www.w3.org/ns/dcat#distribution",
+                "@type": "@id"
+            },
+            "granularity": "http://www.w3.org/ns/dcat#granularity",
+            "otherIdentifier": {
+                "@id": "http://www.w3.org/ns/adms#identifier",
+                "@type": "@id"
+            },
+            "keyword": "http://www.w3.org/ns/dcat#keyword",
+            "landingPage": {
+                "@id": "http://www.w3.org/ns/dcat#landingPage",
+                "@type": "@id"
+            },
+            "sample": {
+                "@id": "http://www.w3.org/ns/adms#sample",
+                "@type": "@id"
+            },
+            "theme": {
+                "@id": "http://www.w3.org/ns/dcat#theme",
+                "@type": "@id"
+            },
+            "versionInfo": "http://www.w3.org/2002/07/owl#versionInfo",
+            "versionNotes": "http://www.w3.org/ns/adms#versionNotes"
+        },
+        {
+            "dataset": {
+                "@id": "http://www.w3.org/ns/dcat#dataset",
+                "@type": "@id"
+            },
+            "record": {
+                "@id": "http://www.w3.org/ns/dcat#record",
+                "@type": "@id"
+            },
+            "themeTaxonomy": {
+                "@id": "http://www.w3.org/ns/dcat#themeTaxonomy",
+                "@type": "@id"
+            }
+            
+        },
+	{
+	   "vcard" : "http://www.w3.org/2006/vcard/ns#",
+  	   "email" : "vcard:hasEmail"
+	},
+        {
+	   "foaf" : "http://xmlns.com/foaf/0.1/"
+	}
+    ],
+
+     "@id" : "http://sample.org/catalog",
+     "@type": "http://www.w3.org/ns/dcat#Catalog",
+
+    "license": "http://my_catalog_license",
+    "title" : "Voorbeeldcatalogus",
+    "description" : "Deze voorbeeld catalogus is een jsonld representatie volgens de DCAT-AP VL specificatie",
+    "publisher": {
+	"@type":"foaf:Agent",
+        "foaf:name" : "Agentschap Informatie Vlaanderen"
+	},
+
+    "dataset": [ {
+	"@id" : "http://sample.org/dataset1",
+	"@type": "http://www.w3.org/ns/dcat#Dataset",
+
+
+        "title": "dataset1 titel",
+        "description": "Meer uitleg over dataset1",
+        
+        "contactPoint": {
+		"@type": "vcard:VCard",
+		"@type": "vcard:Kind",
+		"email" : "contact@sample.org"
+	},
+        "publisher": {
+		"@type":"foaf:Agent",
+                 "foaf:name" : "Agentschap Informatie Vlaanderen"
+	},
+
+
+	
+        "landingPage": "http://sample.org/dataset1.html",
+
+        "keyword": [
+		"Energie",
+		"Water"
+		],
+
+        "temporalCoverage": {
+	   "schema:startDate" : {
+		"@value" : "2015-01-14",
+		"@type"  : "xsd:Date"
+		},
+	   "schema:endDate" : {
+		"@value" : "2017-12-31",
+		"@type"  : "xsd:Date"
+		}
+	},
+
+        "issued": "2004-02-12T15:19:21+00:00",
+        "modified": "2017-03-12T12:22:41+00:00",
+        "frequency": "http://publications.europa.eu/resource/authority/frequency/MONTHLY",
+
+        "/dc/terms/accessRights": "http://sample.identifier",
+        "/dc/terms/conformsTo": "http://sample.identifier",
+        "/dc/terms/hasVersion": "a sample value",
+        "/dc/terms/identifier": "a sample value",
+        "/dc/terms/isVersionOf": "a sample value",
+        "/dc/terms/language": "http://sample.identifier",
+        "/dc/terms/provenance": "http://sample.identifier",
+        "/dc/terms/relation": "a sample value",
+        "/dc/terms/source": "a sample value",
+        "/dc/terms/spatial": "http://sample.identifier",
+        "/dc/terms/type": "http://sample.identifier",
+        "dataDictionary": "a sample value",
+        "dataQuality": "a sample value",
+        "granularity": "a sample value",
+        "otherIdentifier": "alternatieve Identificator",
+        "sample": "http://sample.identifier",
+        "theme": "http://sample.identifier",
+        "versionInfo": "a sample value",
+        "versionNotes": "a sample value",
+
+
+        "distribution": [
+	    {
+	      "@id" : "http://sample.org/dataset1/distribution1",
+	      "@type" : "http://www.w3.org/ns/dcat#Distribution",
+	
+	      "title"       : "distribution1 titel",
+	      "description" : "een beschrijving van de distributie distribution1",
+              "accessURL": "http://sample.org/distribution1/file",
+	      "license": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+
+              "byteSize": "a sample value",
+              "bytes": "a sample value",
+              "downloadURL": "a sample value",
+              "mediaType": "http://sample.identifier",
+              "size": "a sample value"
+	    },
+	    {
+	      "@id" : "http://sample.org/dataset1/distribution2"
+	    }
+	]
+
+    },
+    {
+	"@id" : "http://sample.org/dataset2",
+	"@type": "http://www.w3.org/ns/dcat#Dataset"
+    }
+    ]
+}
