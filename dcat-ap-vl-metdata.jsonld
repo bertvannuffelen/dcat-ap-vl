@@ -1,0 +1,188 @@
+{
+    "@context": [
+        {
+            "license": {
+                "@id": "http://purl.org/dc/terms/license",
+                "@type": "@id"
+            },
+            "accessURL": "http://www.w3.org/ns/dcat#accessURL",
+            "byteSize": "http://www.w3.org/ns/dcat#byteSize",
+            "bytes": "http://www.w3.org/ns/dcat#bytes",
+            "downloadURL": "http://www.w3.org/ns/dcat#downloadURL",
+            "mediaType": {
+                "@id": "http://www.w3.org/ns/dcat#mediaType",
+                "@type": "@id"
+            },
+            "size": "http://www.w3.org/ns/dcat#size"
+        },
+        {
+	    "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "/dc/terms/accessRights": {
+                "@id": "http://purl.org/dc/terms/accessRights",
+                "@type": "@id"
+            },
+            "frequency": "http://purl.org/dc/terms/acrualPeriodicity",
+            "/dc/terms/conformsTo": {
+                "@id": "http://purl.org/dc/terms/conformsTo",
+                "@type": "@id"
+            },
+            "description": "http://purl.org/dc/terms/description",
+            "/dc/terms/hasVersion": "http://purl.org/dc/terms/hasVersion",
+            "/dc/terms/identifier": "http://purl.org/dc/terms/identifier",
+            "/dc/terms/isVersionOf": "http://purl.org/dc/terms/isVersionOf",
+            "issued": {
+		"@id" : "http://purl.org/dc/terms/issued",
+		"@type" : "xsd:DateTime"
+		},
+            "/dc/terms/language": {
+                "@id": "http://purl.org/dc/terms/language",
+                "@type": "@id"
+            },
+            "modified": {
+		"@id" : "http://purl.org/dc/terms/modified",
+		"@type" : "xsd:DateTime"
+		},
+            "/dc/terms/provenance": {
+                "@id": "http://purl.org/dc/terms/provenance",
+                "@type": "@id"
+            },
+            "publisher": {
+                "@id": "http://purl.org/dc/terms/publisher",
+                "@type": "@id"
+            },
+            "/dc/terms/relation": "http://purl.org/dc/terms/relation",
+            "/dc/terms/source": "http://purl.org/dc/terms/source",
+            "/dc/terms/spatial": {
+                "@id": "http://purl.org/dc/terms/spatial",
+                "@type": "@id"
+            },
+            "temporalCoverage": {
+                "@id": "http://purl.org/dc/terms/temporal",
+                "@type": "@id"
+            },
+	    "schema" : "https://schema.org/",
+            "title": "http://purl.org/dc/terms/title",
+            "/dc/terms/type": {
+                "@id": "http://purl.org/dc/terms/type",
+                "@type": "@id"
+            },
+            "contactPoint": {
+                "@id": "http://www.w3.org/ns/dcat#contactPoint",
+                "@type": "@id"
+            },
+            "dataDictionary": "http://www.w3.org/ns/dcat#dataDictionary",
+            "dataQuality": "http://www.w3.org/ns/dcat#dataQuality",
+            "distribution": {
+                "@id": "http://www.w3.org/ns/dcat#distribution",
+                "@type": "@id"
+            },
+            "granularity": "http://www.w3.org/ns/dcat#granularity",
+            "otherIdentifier": {
+                "@id": "http://www.w3.org/ns/adms#identifier",
+                "@type": "@id"
+            },
+            "keyword": "http://www.w3.org/ns/dcat#keyword",
+            "landingPage": {
+                "@id": "http://www.w3.org/ns/dcat#landingPage",
+                "@type": "@id"
+            },
+            "sample": {
+                "@id": "http://www.w3.org/ns/adms#sample",
+                "@type": "@id"
+            },
+            "theme": {
+                "@id": "http://www.w3.org/ns/dcat#theme",
+                "@type": "@id"
+            },
+            "versionInfo": "http://www.w3.org/2002/07/owl#versionInfo",
+            "versionNotes": "http://www.w3.org/ns/adms#versionNotes"
+        },
+        {
+            "dataset": {
+                "@id": "http://www.w3.org/ns/dcat#dataset",
+                "@type": "@id"
+            },
+            "record": {
+                "@id": "http://www.w3.org/ns/dcat#record",
+                "@type": "@id"
+            },
+            "themeTaxonomy": {
+                "@id": "http://www.w3.org/ns/dcat#themeTaxonomy",
+                "@type": "@id"
+            }
+            
+        },
+	{
+	   "vcard" : "http://www.w3.org/2006/vcard/ns#",
+  	   "email" : "vcard:hasEmail"
+	},
+        {
+	   "foaf" : "http://xmlns.com/foaf/0.1/"
+	}
+    ],
+
+     "@id" : "http://energiesparen.be/opendata_catalogus_VEA",
+     "@type": "http://www.w3.org/ns/dcat#Catalog",
+
+    "license": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+
+    "title" : "VEA opendata catalogus",
+    "description" : "Deze catalogus bevat datasets ontsloten door VEA",
+    "publisher": {
+	"@type":"foaf:Agent",
+        "foaf:name" : "Vlaams Energieagentschap"
+	},
+
+    "dataset": [ {
+	"@id" : "http://energiesparen.be/energieprestatiecertificaten-voor-publieke-gebouwen",
+	"@type": "http://www.w3.org/ns/dcat#Dataset",
+
+
+        "title": "Energieprestatiecertificaten voor publieke gebouwen",
+        "description": "Een energieprestatiecertificaat (EPC) voor publieke gebouwen is verplicht voor gebouwen waarin publieke organisaties gevestigd zijn die aan een groot aantal personen overheidsdiensten verstrekken. Een EPC voor publieke gebouwen wordt opgemaakt door een erkende energiedeskundige type C of een interne energiedeskundige en is gebaseerd op de gemeten (werkelijke) jaarverbruiken van de publieke organisatie. Het EPC is verplicht voor gebouwen gelegen in het Vlaamse Gewest waarin publieke organisaties gevestigd zijn die aan een groot aantal personen overheidsdiensten verstrekken en die vaak door het publiek worden bezocht. Het gaat over gebouwen van: de federale overheid, incl. de parastatalen; de Vlaamse overheid, incl. de interne en externe verzelfstandigde agentschappen; de provinciale overheden; de gemeentelijke overheden, incl. OCMW's; overheidsbedrijven; onderwijsinstellingen; welzijnsvoorzieningen; gezondheidsvoorzieningen.  De invoering werd stelselmatig verstrengd. In eerste instantie was het EPC voor publieke gebouwen enkel verplicht voor grote publieke gebouwen met een bruikbare vloeroppervlakte vanaf 1000m2. Sinds 1 januari 2013 geldt de verplichting ook voor gebouwen vanaf 500m2. Vanaf 1 januari 2015 wordt het EPC ook verplicht voor gebouwen vanaf 250m2 bruikbare vloeroppervlakte.",
+        
+        "contactPoint": {
+		"@type": "vcard:VCard",
+		"@type": "vcard:Kind",
+		"email" : "opendata@vea.be"
+	},
+        "publisher": {
+		"@type":"foaf:Agent",
+                 "foaf:name" : "Vlaams Energieagentschap"
+	},
+
+
+        "landingPage": "http://app.energiesparen.be/sites/all/includes_energiesparen/Open_Data/HTML/01_EPC_PUBLIEKE_GEBOUWEN.html",
+
+        "keyword": [
+		"Energie",
+		"VEA" ,
+		"Certificaat",
+		"EPC",
+		"Publiek"
+		],
+
+        "modified": "2018-02-28T09:01:33+00:00",
+        "frequency": "http://publications.europa.eu/resource/authority/frequency/MONTHLY",
+
+
+        "distribution": [
+	    {
+	      "@id" : "http://energiesparen.be/energieprestatiecertificaten-voor-publieke-gebouwen/distibutie_01",
+	      "@type" : "http://www.w3.org/ns/dcat#Distribution",
+	
+	      "title"       : "Dataset 01_EPC_PUBLIEKE_GEBOUWEN",
+	      "description" : "",
+              "accessURL": "http://app.energiesparen.be/sites/all/includes_energiesparen/Open_Data/Data/01_EPC_PUBLIEKE_GEBOUWEN.csv",
+	      "license": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0"
+
+	    }
+	]
+
+    },
+    {
+	"@id" : "http://sample.org/dataset2",
+	"@type": "http://www.w3.org/ns/dcat#Dataset"
+    }
+    ]
+}
